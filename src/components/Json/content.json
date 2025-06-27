@@ -1,0 +1,342 @@
+{
+    "education":[{
+        "holder": "/educ1.jpeg",
+        "title" : "i've schooled here",
+        "start" : "begin",
+        "end" : "end",
+        "location" : "here khvdqcqjuvo csqlhvqov",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam."
+    }],
+    "capacite" : [{
+        "carousel" : [
+            {
+                "icon" :"AppWindow",
+                "title" : "number1",
+                "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam."
+            },
+            {
+                "icon" :"Database",
+                "title" : "number1",
+                "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam."
+            },
+            {
+                "icon" :"Smartphone",
+                "title" : "number1",
+                "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam."
+            },
+            {
+                "icon" :"Lock",
+                "title" : "number1",
+                "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam."
+            },
+            {
+                "icon" :"Lock",
+                "title" : "number1",
+                "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam."
+            }
+        ],
+        "backend" : [
+            {
+                "hold":"/img/1.jpg",
+                "skill": "Html",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/2.jpg",
+                "skill": "Html",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/3.jpg",
+                "skill": "Html",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/4.jpg",
+                "skill": "Html",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/5.jpg",
+                "skill": "Html",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/6.jpg",
+                "skill": "Html",
+                "Xp" : "1  ans d'esxperience" 
+            }
+        ],
+        "front" : [
+            {
+                "hold":"/img/7.jpg",
+                "skill": "js",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/6.jpg",
+                "skill": "js",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/3.jpg",
+                "skill": "js",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/4.jpg",
+                "skill": "js",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/5.jpg",
+                "skill": "js",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/1.jpg",
+                "skill": "js",
+                "Xp" : "1  ans d'esxperience" 
+            }
+        ],
+        "cloud" : [
+            {
+                "hold":"/img/7.jpg",
+                "skill": "react",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/6.jpg",
+                "skill": "css",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/3.jpg",
+                "skill": "css",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/4.jpg",
+                "skill": "css",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/5.jpg",
+                "skill": "css",
+                "Xp" : "1  ans d'esxperience" 
+            },
+            {
+                "hold":"/img/1.jpg",
+                "skill": "css",
+                "Xp" : "1  ans d'esxperience" 
+            }
+        ]
+    }],
+    "Experience":[
+        {
+        "holder": "/img/1.jpg",
+        "id" : 0,
+        "title" : ["first"," ","sec"],
+        "start" : "begin",
+        "end" : "end",
+        "location" : "here khvdqcqjuvo csqlhvqov",
+        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam.",
+        "techno" : ["html","css","js"]
+        },
+        {
+            "holder": "/img/1.jpg",
+            "title" : ["first"," sec"],
+            "start" : "begin",
+            "end" : "end",
+            "location" : "here khvdqcqjuvo csqlhvqov",
+            "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam.",
+            "techno" : ["html","css","js"]
+            },
+            {
+                "holder": "/img/1.jpg",
+                "title" : ["first"," sec"],
+                "start" : "begin",
+                "end" : "end",
+                "location" : "here khvdqcqjuvo csqlhvqov",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam.",
+                "techno" : ["html","css","js"]
+            },
+            {
+                "holder": "/img/1.jpg",
+                "title" : ["first"," sec"],
+                "start" : "begin",
+                "end" : "end",
+                "location" : "here khvdqcqjuvo csqlhvqov",
+                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. Natus eligendi tenetur explicabo, ipsam praesentium aspernatur repudiandae blanditiis aperiam.",
+                "techno" : ["html","css","js"]
+            }
+    ],
+    "porto":[
+        {
+            "title":"i've schooled here",
+            "type":"web",
+            "holder":"/img/2.jpg",
+            "techno":["css","js","html"],
+            "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. ",
+            "more" : [
+                {
+                    "title" : "i've schooled here",
+                    "about" : "liquam dbuovdqcdhvuodsljvljjsqdql jqcsc  ceuaedahyivoudc adz ouaed cjek ",
+                    "wats" : "liberojbklj vlj jcze czeujo  vf lvzifv  dzvljkdvh kk vzevlujbljvmjkjsrgmkvsdldfsnmfv ljf ",
+                    "skill" : ["one", "too", "tree"],
+                    "comment" : "srtdfyughjù,lnkm j tpiuoytid ciuyt uczdo cz yzivouzeb",
+                    "source" : "/img/1.jpg",
+                    "framework" : {
+                        "statues" : true,
+                        "content" : ["frame one", "frame too", "frame tree", "frame four"]
+                    }
+                    
+
+                }
+            ],
+            "github" :{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            },
+            "youtube" :{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            },
+            
+             "linkedin" : [{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            }]
+        },
+        {
+            "title":"i've schooled here",
+            "type":"web",
+            "holder":"/img/2.jpg",
+            "techno":["css","js","html"],
+            "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. ",
+            "more" : [
+                {
+                    "title" : "i've schooled here",
+                    "about" : "liquam dbuovdqcdhvuodsljvljjsqdql jqcsc  ceuaedahyivoudc adz ouaed cjek ",
+                    "wats" : "liberojbklj vlj jcze czeujo  vf lvzifv  dzvljkdvh kk vzevlujbljvmjkjsrgmkvsdldfsnmfv ljf ",
+                    "skill" : ["one", "too", "tree"],
+                    "comment" : "srtdfyughjù,lnkm j tpiuoytid ciuyt uczdo cz yzivouzeb",
+                    "source" : "/img/1.jpg",
+                    "framework" : {
+                        "statues" : false,
+                        "content" : ["frame one", "frame too", "frame tree", "frame four"]
+                    }
+                   
+
+                }
+            ],
+             "linkedin" : [{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            }],
+            "youtube" :{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            },
+            "github" :{
+                "statue" : false,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            }
+        },
+        {
+            "title":"i've schooled here",
+            "type":"back",
+            "holder":"/img/2.jpg",
+            "techno":["css","js","html"],
+            "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. ",
+            "more" : [
+                {
+                    "title" : "i've schooled here",
+                    "about" : "liquam dbuovdqcdhvuodsljvljjsqdql jqcsc  ceuaedahyivoudc adz ouaed cjek ",
+                    "wats" : "liberojbklj vlj jcze czeujo  vf lvzifv  dzvljkdvh kk vzevlujbljvmjkjsrgmkvsdldfsnmfv ljf ",
+                    "skill" : ["one", "too", "tree"],
+                    "comment" : "srtdfyughjù,lnkm j tpiuoytid ciuyt uczdo cz yzivouzeb",
+                    "source" : "/img/1.jpg",
+                    "framework" : {
+                        "statues" : true,
+                        "content" : ["frame one", "frame too", "frame tree", "frame four"]
+                    }
+                   
+
+                }
+            ],
+             "github" : {
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            } ,
+            "youtube" :{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            },
+            "linkedin" : [{
+                "statue" : false,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            }]
+        },
+        {
+            "title":"i've schooled here",
+            "type":"front",
+            "holder":"/img/2.jpg",
+            "techno":["css","js","html"],
+            "description" :"liquam delectus accusamus aspernatur libero ad quibusdam vitae assumenda. ",
+            "more" : [
+                {
+                    "title" : "i've schooled here",
+                    "about" : "liquam dbuovdqcdhvuodsljvljjsqdql jqcsc  ceuaedahyivoudc adz ouaed cjek ",
+                    "wats" : "liberojbklj vlj jcze czeujo  vf lvzifv  dzvljkdvh kk vzevlujbljvmjkjsrgmkvsdldfsnmfv ljf ",
+                    "skill" : ["one", "too", "tree"],
+                    "comment" : "srtdfyughjù,lnkm j tpiuoytid ciuyt uczdo cz yzivouzeb",
+                    "source" : "/img/1.jpg",
+                    "framework" : {
+                        "statues" : true,
+                        "content" : ["frame one", "frame too", "frame tree", "frame four"]
+                    }
+                   
+                }
+            ],
+            "github" : {
+                "statue" : false,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            },
+            "youtube" :{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            },
+            "linkedin" : [{
+                "statue" : true,
+                "link":"https://youtu.be/fUvGQoMJ4dU"
+            }]
+        }
+    ],
+    "reward":[
+        {
+            "image": "/img/1.jpg",
+            "title":"i've schooled here",
+            "description" :"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliqua",
+            "date" : "22 juin 2023",
+            "where" : "accra - Ghana",
+            "link" : "https://www.youtube.com/watch?v=6EthGRnCZrw"
+        },
+        {
+            "image": "/img/1.jpg",
+            "title":"i've schooled here",
+            "description" :"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliqua",
+            "date" : "22 juin 2023",
+            "where" : "accra - Ghana",
+            "link" : "https://www.youtube.com/watch?v=6EthGRnCZrw"
+        },
+        {
+            "image": "/img/1.jpg",
+            "title":"i've schooled here",
+            "description" :"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam numquam ratione aliqua",
+            "date" : "22 juin 2023",
+            "where" : "accra - Ghana",
+            "link" : "https://www.youtube.com/watch?v=6EthGRnCZrw"
+        }
+    ]
+}

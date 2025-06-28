@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { FaStar, FaGlobe, FaShareAlt } from 'react-icons/fa';
 
 interface StatItemProps {
@@ -27,7 +27,22 @@ const CarouselComponent: React.FC = () => {
     { id: 6, icon: FaShareAlt, number: "10+", description: "Conférences données" },
   ];
 
-  const itemsPerPage = 3;
+
+  const [itemsPerPage, setItemsPerPage] = useState(3);
+
+  const updateItemsPerPage = useCallback(() => {
+    const isMobile = window.innerWidth < 640;
+    setItemsPerPage(isMobile ? 1 : 4);
+  }, []);
+
+
+
+  useEffect(() => {
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, [updateItemsPerPage]);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 

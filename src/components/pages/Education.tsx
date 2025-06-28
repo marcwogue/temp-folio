@@ -1,11 +1,14 @@
 import { ArrowRight, Boxes, Building } from "lucide-react"
 import {education} from "../Json/content.json"
+import ParcNav from "../mobile/parcourNav"
 
 
 
 const Education = () => {
   return (
     <div className="m-4">
+
+      <ParcNav />
       
 
 
@@ -28,7 +31,7 @@ const Education = () => {
                 return(
                     <li>
                         <div className="timeline-middle ">
-                            <img src={index.holder} className="h-[5rem] w-[6rem] object-cover  rounded-[50%]" alt="" />
+                            <img src={index.holder} className="h-[0rem] w-[0rem] object-cover md:h-[5rem] md:w-[6rem]  rounded-[50%]" alt="" />
                         </div>
                         <div className="timeline-end timeline-box text-[1rem]">
                             <div className="flex justify-between">

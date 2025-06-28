@@ -1,6 +1,7 @@
 import { Boxes, ClockFading } from "lucide-react"
 import Capacites from "../ui/capacites"
 import {capacite} from "../Json/content.json"
+import SNav from "../mobile/skillNav"
 
 const back = capacite[0].backend
 const front = capacite[0].front
@@ -9,6 +10,7 @@ const cloud = capacite[0].cloud
 const Competences = () => {
   return (
     <div>
+        <SNav/>
 
         <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">

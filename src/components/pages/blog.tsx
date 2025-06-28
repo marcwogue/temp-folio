@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Boxes, Globe, Heart, StickyNote } from "lucide-react";
 import blog from "../Json/blog.json";
 import Popup from "../ui/popup";
+import SNav from "../mobile/skillNav";
 
 const Blog = () => {
   const [visibleCount, setVisibleCount] = useState(6); // Commence avec 6 articles
@@ -15,6 +16,7 @@ const Blog = () => {
 
   return (
     <div>
+      <SNav/>
       <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">
           <Boxes className="inline-block mx-auto" /> découvrez

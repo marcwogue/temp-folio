@@ -3,6 +3,7 @@ import { Boxes, Github, Linkedin, Target, Youtube } from "lucide-react";
 import { porto } from "../Json/content.json";
 import Popup from "../ui/popup";
 import Doc from "../ui/doc";
+import SNav from "../mobile/skillNav";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("tout");
@@ -14,6 +15,8 @@ const Portfolio = () => {
 
   return (
     <div>
+
+      <SNav/>
 
 
       <div className="text-center hidden sm:block m-8">
@@ -46,7 +49,7 @@ const Portfolio = () => {
       <div className="flex gap-10 mt-8 justify-center flex-wrap">
         {filteredPorto.map((index) => {
           return (
-            <div className="w-2/5 rounded-2xl p-4 bg-base-100 ">
+            <div className="w-4/5 md:w-2/5 rounded-2xl p-4 bg-base-100 ">
               <div className="flex justify-between">
                 <div>
                   <h1>{index.title}</h1>

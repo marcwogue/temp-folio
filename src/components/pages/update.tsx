@@ -1,10 +1,12 @@
 
 import { Boxes } from 'lucide-react'
 import CarouselComponent from '../ui/awair'
+import MNav from '../mobile/moreNav'
 
 const Update = () => {
   return (
     <div>
+      <MNav/>
         <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">
           <Boxes className="inline-block mx-auto" /> voici

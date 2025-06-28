@@ -1,9 +1,11 @@
 import { ArrowRight, Boxes, Building, Target } from "lucide-react"
 import {Experience} from "../Json/content.json"
+import ParcNav from "../mobile/parcourNav"
 
 const experience = () => {
   return (
     <div className="overflow-x-hidden">
+      <ParcNav/>
 
         <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">

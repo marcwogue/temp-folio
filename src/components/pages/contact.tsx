@@ -1,9 +1,11 @@
 import { Boxes } from "lucide-react"
 import Form from "../ui/contactf"
+import MNav from "../mobile/moreNav"
 
 const Contact = () => {
   return (
     <div className="container top-10 sticky mx-auto">
+      <MNav/>
 
 
         <div className="text-center hidden sm:block m-8">

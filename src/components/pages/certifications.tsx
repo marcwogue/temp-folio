@@ -1,10 +1,12 @@
 import { Boxes } from "lucide-react"
 import Certificat from "../ui/certificats"
 import Reward from "../ui/reward"
+import SNav from "../mobile/skillNav"
 
 const Certifications = () => {
   return (
     <div>
+        <SNav/>
         <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">
           <Boxes className="inline-block mx-auto" /> voici

@@ -3,6 +3,7 @@ import { Boxes, Calendar, Globe, LocationEdit, Map, Package } from "lucide-react
 import conf from "../Json/conference.json"
 import Popup from "../ui/popup"
 import { useState } from "react"
+import MNav from "../mobile/moreNav"
 
 
 
@@ -16,7 +17,7 @@ const Conferences = () => {
   const more = visible < conf.length 
   return (
     <div>
-
+      <MNav/>
 
         <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">

@@ -37,7 +37,7 @@ const head = (props: {className?:string,value : boolean,fonc:(event: React.Mouse
                       </span>
                         </div>:''}
                           <div className="card bg-primary p-2 text-center">
-                            <a href="up.pdf" target="_blank">{props.value? 'download resume':''} <HardDriveDownload value="download resume"  className=" text-center inline-block mx-auto"/> </a>
+                            <a href="up.pdf" target="_blank">{props.value? 'download resume':''} <HardDriveDownload  className=" text-center inline-block mx-auto"/> </a>
                           </div>
                   </div>
                   </div>

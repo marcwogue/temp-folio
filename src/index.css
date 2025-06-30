@@ -8,8 +8,6 @@
   logs: true;
 }
 
-@plugin 'tailwind-scrollbar';
-
 
 @plugin "daisyui/theme" {
   name: "shadow";

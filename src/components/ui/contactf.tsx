@@ -19,9 +19,12 @@ const Form = () => {
       formData.append("message", mess)
       formData.append("_captcha", "false")
 
-      fetch("https://formsubmit.co/el/pudobo", {
+      fetch("https://getform.io/f/aejlmeob", {
         method: "POST",
         body: formData,
+        headers :{
+          "Accept": "application/json",
+        }
       })
         .then((res) => {
           if (res.ok) {

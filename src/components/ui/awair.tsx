@@ -32,7 +32,7 @@ const CarouselComponent: React.FC = () => {
 
   const updateItemsPerPage = useCallback(() => {
     const isMobile = window.innerWidth < 640;
-    setItemsPerPage(isMobile ? 1 : 4);
+    setItemsPerPage(isMobile ? 1 : 3);
   }, []);
 
 

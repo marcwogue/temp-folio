@@ -3,7 +3,7 @@ import { Mail,Laptop,Boxes, Building, Locate, Github, Linkedin } from 'lucide-re
 
 const acceuil = () => {
   return (
-    <div className='gap-4'>
+    <div className='gap-4 overflow-auto h-full'>
          <div className='text-center'>
             <h2 className='text-secondary  text-2xl uppercase sm:text-xl sm:text-primary-content   '>
                <Boxes  className='hidden  sm:inline-block' /> Salut

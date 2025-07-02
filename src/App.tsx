@@ -56,12 +56,10 @@ function App() {
 
       <div className="grid grid-rows-12 grid-cols-12 h-[100vh]">
       <Head value={left} fonc={handlelift} />
-      <div className=''>
-
-      </div>
+      
 
       <div
-        className={`col-span-12 sm:rounded-2xl mb-16 sm:mb-0 sm:ml-[5vw] sm:mr-[5vw] sm:mt-[5vh] sm:row-span-11 p-4 overflow-scroll row-span-9 sm:col-span-11 bg-base-200 ${
+        className={`col-span-12 h-screen sticky top-0 overflow-hidden sm:rounded-2xl mb-16 sm:mb-0 sm:ml-[5vw] sm:mr-[5vw] sm:mt-[5vh] sm:row-span-11 p-4  row-span-9 sm:col-span-11 bg-base-200 ${
           left ? 'lg:col-span-10' : 'lg:col-span-11'
         }`}
       >
@@ -70,7 +68,7 @@ function App() {
           <FullscreenToggle className="fixed z-50 bottom-0 ml-[66%] scale-75 hidden sm:block float-end" />
         </div>
 
-        <ContainerAnimatedPage>
+        <ContainerAnimatedPage className='overflow-auto'>
 
             <div className="m-8">
               <AnimatePresence mode="wait">

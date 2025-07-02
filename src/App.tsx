@@ -4,6 +4,7 @@ import Acceuil from './components/pages/acceuil';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from "framer-motion";
+import FullscreenStickySection from './components/ui/screener';
 
 import Education from './components/pages/Education';
 import FullscreenToggle from './components/ui/fullscreen';
@@ -19,6 +20,7 @@ import SpeecialAnimatedPage from './components/ui/SpecialAnimated';
 import ContainerAnimatedPage from './components/ui/conteneurdiV';
 import Loader from './components/ui/loader';
 import Update from './components/pages/update';
+import Gemini from './ chat/gemini';
 
 function App() {
   const location = useLocation();
@@ -73,16 +75,17 @@ function App() {
             <div className="m-8">
               <AnimatePresence mode="wait">
                 <Routes location={location} key={location.pathname}>
-                  <Route path="/" element={<SpeecialAnimatedPage><Acceuil /></SpeecialAnimatedPage>} />
-                  <Route path="/Education" element={<SpeecialAnimatedPage><Education /></SpeecialAnimatedPage>} />
-                  <Route path="/Capacites" element={<SpeecialAnimatedPage><Competences /></SpeecialAnimatedPage>} />
-                  <Route path="/Experience" element={<SpeecialAnimatedPage><Experience /></SpeecialAnimatedPage>} />
-                  <Route path="/portfolio" element={<SpeecialAnimatedPage><Portfolio /></SpeecialAnimatedPage>} />
-                  <Route path="/realisations" element={<SpeecialAnimatedPage><Certifications /></SpeecialAnimatedPage>} />
-                  <Route path="/blog" element={<SpeecialAnimatedPage><Blog /></SpeecialAnimatedPage>} />
-                  <Route path="/conferences" element={<SpeecialAnimatedPage><Conferences /></SpeecialAnimatedPage>} />
-                  <Route path="/contact" element={<SpeecialAnimatedPage><Contact /></SpeecialAnimatedPage>} />
-                  <Route path="/maj" element={<SpeecialAnimatedPage><Update /></SpeecialAnimatedPage>} />
+                  <Route path="/" element={<FullscreenStickySection><SpeecialAnimatedPage><Acceuil /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/Education" element={<FullscreenStickySection><SpeecialAnimatedPage><Education /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/Capacites" element={<FullscreenStickySection><SpeecialAnimatedPage><Competences /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/Experience" element={<FullscreenStickySection><SpeecialAnimatedPage><Experience /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/portfolio" element={<FullscreenStickySection><SpeecialAnimatedPage><Portfolio /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/realisations" element={<FullscreenStickySection><SpeecialAnimatedPage><Certifications /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/blog" element={<FullscreenStickySection><SpeecialAnimatedPage><Blog /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/conferences" element={<FullscreenStickySection><SpeecialAnimatedPage><Conferences /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/contact" element={<FullscreenStickySection><SpeecialAnimatedPage><Contact /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/maj" element={<FullscreenStickySection><SpeecialAnimatedPage><Update /></SpeecialAnimatedPage></FullscreenStickySection>} />
+                  <Route path="/chat" element={<FullscreenStickySection><SpeecialAnimatedPage><Gemini /></SpeecialAnimatedPage></FullscreenStickySection>} />
                 </Routes>
               </AnimatePresence>
             </div>

@@ -32,7 +32,7 @@ const mouse = () => {
                 {magic? <WandSparkles /> : <Wand />}
         </button>
     </div>
-    {magic?<div className={scale ? 'w-8 h-8 bg-success opacity-100  z-50 fixed scale-125 transition-all duration-300 rounded-[50%] ' : 'w-8 h-8 bg-success scale-100 opacity-60 transition-all duration-300 rounded-[50%] absolute'} ref={mouseRef} style={{transform: `scale(${scale})`}}>
+    {magic?<div className={scale ? 'w-8 h-8 bg-secondary opacity-90  z-100 absolute scale-125 transition-all duration-300 rounded-[50%] ' : 'w-8 h-8 bg-secondary scale-100 z-100 opacity-60 transition-all duration-300 rounded-[50%] absolute'} ref={mouseRef} style={{transform: `scale(${scale})`}}>
 
 
 </div>:null}

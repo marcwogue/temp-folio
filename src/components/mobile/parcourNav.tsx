@@ -8,7 +8,7 @@ const ParcNav: React.FC = () => {
   ];
 
   return (
-    <nav className="absolute top-0 grid grid-cols-2 left-0 w-full h-[45px] bg-base-100 border-t  z-50 sm:hidden justify-around items-center">
+    <nav className="absolute z-50 top-0  grid grid-cols-2 left-0 w-full h-[45px] bg-base-100 border-t  sm:hidden justify-around items-center">
       {navItems.map(({ to, label, icon }) => (
         <NavLink
           key={to}

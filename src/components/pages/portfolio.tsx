@@ -14,9 +14,12 @@ const Portfolio = () => {
       : porto.filter((item) => item.type.toLowerCase() === filter.toLowerCase());
 
   return (
-    <div>
 
+    <div>
       <SNav/>
+    <div className="mt-14 sm:mt-0 ">
+
+      
 
 
       <div className="text-center hidden sm:block m-8">
@@ -134,6 +137,7 @@ const Portfolio = () => {
           );
         })}
       </div>
+    </div>
     </div>
   );
 };

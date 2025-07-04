@@ -1,0 +1,8 @@
+[
+    { "id": 1, "icon": "FaStar", "number": "80+", "description": "Étoiles sur GitHub" },
+    { "id": 2, "icon": "FaGlobe", "number": "15+","description": "Pays visités" },
+    { "id": 3, "icon": "FaShareAlt", "number": "25+","description": "Projets open-source" },
+    { "id": 4, "icon": "FaStar", "number": "50+","description": "Contributeurs uniques" },
+    { "id": 5, "icon": "FaGlobe", "number": "30+", "description": "Villes explorées" },
+    { "id": 6, "icon": "FaShareAlt", "number": "10+", "description": "Conférences données" }
+  ]

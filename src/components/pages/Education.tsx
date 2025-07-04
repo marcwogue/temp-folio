@@ -1,14 +1,17 @@
 import { ArrowRight, Boxes, Building } from "lucide-react"
 import {education} from "../Json/content.json"
 import ParcNav from "../mobile/parcourNav"
+import { div } from "framer-motion/client"
 
 
 
 const Education = () => {
   return (
-    <div className="m-4">
 
-      <ParcNav />
+    <div><ParcNav />
+    <div className=" mt-16">
+
+      
       
 
 
@@ -61,6 +64,7 @@ const Education = () => {
       </div>
     </div>
     </div>
+  </div>
   )
 }
 

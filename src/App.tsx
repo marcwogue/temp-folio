@@ -4,7 +4,6 @@ import Acceuil from './components/pages/acceuil';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from "framer-motion";
-import FullscreenStickySection from './components/ui/screener';
 
 import Education from './components/pages/Education';
 import FullscreenToggle from './components/ui/fullscreen';
@@ -20,7 +19,7 @@ import SpeecialAnimatedPage from './components/ui/SpecialAnimated';
 import ContainerAnimatedPage from './components/ui/conteneurdiV';
 import Loader from './components/ui/loader';
 import Update from './components/pages/update';
-import Gemini from './ chat/gemini';
+import FullscreenStickySection from './components/ui/screener';
 
 function App() {
   const location = useLocation();
@@ -59,7 +58,7 @@ function App() {
       
 
       <div
-        className={`col-span-12 h-screen sticky top-0 overflow-hidden sm:rounded-2xl mb-16 sm:mb-0 sm:ml-[5vw] sm:mr-[5vw] sm:mt-[5vh] sm:row-span-11 p-4  row-span-9 sm:col-span-11 bg-base-200 ${
+        className={`col-span-12  relative sm:rounded-2xl  sm:mb-0 sm:ml-[5vw] sm:mr-[5vw] sm:mt-[5vh] sm:row-span-11 p-4  top-0 h-screen sm:h-[90vh] overflow-hidden sm:overflow-auto row-span-9 sm:col-span-11 bg-base-200 ${
           left ? 'lg:col-span-10' : 'lg:col-span-11'
         }`}
       >
@@ -68,7 +67,7 @@ function App() {
           <FullscreenToggle className="fixed z-50 bottom-0 ml-[66%] scale-75 hidden sm:block float-end" />
         </div>
 
-        <ContainerAnimatedPage className='overflow-auto'>
+        <ContainerAnimatedPage>
 
             <div className="m-8">
               <AnimatePresence mode="wait">
@@ -83,7 +82,6 @@ function App() {
                   <Route path="/conferences" element={<FullscreenStickySection><SpeecialAnimatedPage><Conferences /></SpeecialAnimatedPage></FullscreenStickySection>} />
                   <Route path="/contact" element={<FullscreenStickySection><SpeecialAnimatedPage><Contact /></SpeecialAnimatedPage></FullscreenStickySection>} />
                   <Route path="/maj" element={<FullscreenStickySection><SpeecialAnimatedPage><Update /></SpeecialAnimatedPage></FullscreenStickySection>} />
-                  <Route path="/chat" element={<FullscreenStickySection><SpeecialAnimatedPage><Gemini /></SpeecialAnimatedPage></FullscreenStickySection>} />
                 </Routes>
               </AnimatePresence>
             </div>

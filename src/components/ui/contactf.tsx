@@ -38,7 +38,7 @@ const Form = () => {
             console.error("Échec de la soumission")
           }
         })
-        .catch((err) => console.error("Erreur réseau ❌", err))
+        .catch((err) => console.error("Erreur réseau ", err))
         .finally(() => {
           setLoading(false)
           setsubmite(false)
@@ -47,13 +47,13 @@ const Form = () => {
   }, [submited])
 
   const handlesubmit = (e: React.MouseEvent) => {
-    e.preventDefault() // ⛔ empêche le rechargement
+    e.preventDefault() 
     setsubmite(true)
   }
 
   return (
     <form className="w-full max-w-3xl mx-auto">
-      <div className="grid h-[30vh] grid-cols-2 gap-4 w-full">
+      <div className="grid h-[30vh] grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <div className="flex flex-col justify-between">
           <label className="input h-12 w-full">
             <span className="label-text"><Signature /></span>

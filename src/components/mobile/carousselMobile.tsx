@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaStar, FaGlobe, FaShareAlt } from 'react-icons/fa';
-import stats from '../Json/stats.json'; 
+import stats from '../Json/stats.json';
 
 interface StatItemProps {
   icon: React.ElementType;
@@ -8,8 +8,14 @@ interface StatItemProps {
   description: string;
 }
 
+const iconMap: Record<string, React.ElementType> = {
+  FaStar,
+  FaGlobe,
+  FaShareAlt,
+};
+
 const StatItem: React.FC<StatItemProps> = ({ icon: Icon, number, description }) => (
-  <div className="flex-none w-full sm:w-[calc(100%/3)] lg:w-[calc(100%/6)] p-4 flex flex-col items-center text-center">
+  <div className="w-full flex flex-col items-center text-center p-4">
     <div className="flex items-center justify-center w-24 h-24 rounded-full bg-[#E5E5E5] mb-4">
       <Icon className="text-5xl text-[#1A1A1A]" />
     </div>
@@ -18,30 +24,11 @@ const StatItem: React.FC<StatItemProps> = ({ icon: Icon, number, description }) 
   </div>
 );
 
-const iconMap: Record<string, React.ElementType> = {
-  FaStar,
-  FaGlobe,
-  FaShareAlt,
-};
-
-const CarouselComponent: React.FC<{ className?: string }> = (props) => {
-  const [itemsPerPage, setItemsPerPage] = useState(3);
-
-  const updateItemsPerPage = useCallback(() => {
-    const isMobile = window.innerWidth < 640;
-    setItemsPerPage(isMobile ? 1 : 3);
-  }, []);
-
-  useEffect(() => {
-    updateItemsPerPage();
-    window.addEventListener("resize", updateItemsPerPage);
-    return () => window.removeEventListener("resize", updateItemsPerPage);
-  }, [updateItemsPerPage]);
-
+const CarouselMob: React.FC<{ className?: string }> = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
-  const maxIndex = stats.length - itemsPerPage;
+  const maxIndex = stats.length - 1;
 
   useEffect(() => {
     if (paused) return;
@@ -57,8 +44,6 @@ const CarouselComponent: React.FC<{ className?: string }> = (props) => {
     setCurrentIndex(index);
   };
 
-  const translateXValue = -(currentIndex * (100 / stats.length));
-
   return (
     <div className={`bg-base-200 py-16 px-4 font-sans ${props.className || ''}`}>
       <div
@@ -69,27 +54,31 @@ const CarouselComponent: React.FC<{ className?: string }> = (props) => {
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(${translateXValue}%)`,
-            width: `${(stats.length / itemsPerPage) * 100}%`,
+            transform: `translateX(-${currentIndex * 100}%)`,
           }}
         >
           {stats.map((stat) => {
             const IconComponent = iconMap[stat.icon];
             if (!IconComponent) return null;
             return (
-              <StatItem
+              <div
                 key={stat.id}
-                icon={IconComponent}
-                number={stat.number}
-                description={stat.description}
-              />
+                className="w-full flex-shrink-0"
+                style={{ flexBasis: '100%' }}
+              >
+                <StatItem
+                  icon={IconComponent}
+                  number={stat.number}
+                  description={stat.description}
+                />
+              </div>
             );
           })}
         </div>
       </div>
 
       <div className="flex justify-center mt-8 space-x-2">
-        {Array.from({ length: stats.length - itemsPerPage + 1 }).map((_, index) => (
+        {stats.map((_, index) => (
           <button
             key={index}
             className={`w-4 h-2 rounded-sm transition-colors duration-300 ${
@@ -104,4 +93,4 @@ const CarouselComponent: React.FC<{ className?: string }> = (props) => {
   );
 };
 
-export default CarouselComponent;
+export default CarouselMob;

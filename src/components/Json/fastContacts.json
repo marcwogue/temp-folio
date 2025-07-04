@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "label": "Téléphone",
+      "value": "+237 677 123 206",
+      "href": "tel:+237677123206"
+    },
+    {
+      "id": 2,
+      "label": "Courriel",
+      "value": "yokwejuste@gmail.com",
+      "href": "mailto:yokwejuste@gmail.com"
+    },
+    {
+      "id": 3,
+      "label": "Linkedin",
+      "value": "@yokwejuste",
+      "href": "https://www.linkedin.com/in/yokwejuste"
+    },
+    {
+      "id": 4,
+      "label": "Facebook",
+      "value": "@iamyokwejuste",
+      "href": "https://www.facebook.com/iamyokwejuste"
+    },
+    {
+      "id": 5,
+      "label": "Instagram",
+      "value": "@iamyokwejuste",
+      "href": "https://www.instagram.com/iamyokwejuste"
+    },
+    {
+      "id": 6,
+      "label": "TikTok",
+      "value": "@iamyokwejuste",
+      "href": "https://www.tiktok.com/@iamyokwejuste"
+    },
+    {
+      "id": 7,
+      "label": "Twitter",
+      "value": "@yokwejuste",
+      "href": "https://twitter.com/yokwejuste"
+    },
+    {
+      "id": 8,
+      "label": "Youtube",
+      "value": "@iamyokwejuste",
+      "href": "https://youtube.com/@iamyokwejuste"
+    }
+  ]
+  

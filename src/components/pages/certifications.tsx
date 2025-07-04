@@ -5,9 +5,11 @@ import SNav from "../mobile/skillNav"
 
 const Certifications = () => {
   return (
-    <div>
-        <SNav/>
-        <div className="text-center hidden sm:block m-8">
+   <div>
+     <SNav/>
+    <div  className="mt-14 sm:mt-0">
+       
+        <div className="text-center  hidden sm:block m-8">
         <h4 className="text-[1.5rem]">
           <Boxes className="inline-block mx-auto" /> voici
         </h4>
@@ -24,6 +26,7 @@ const Certifications = () => {
       <Certificat/>
       <Reward/>
     </div>
+   </div>
   )
 }
 

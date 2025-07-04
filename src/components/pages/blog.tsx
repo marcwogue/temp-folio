@@ -3,6 +3,7 @@ import { Boxes, Globe, Heart, StickyNote } from "lucide-react";
 import blog from "../Json/blog.json";
 import Popup from "../ui/popup";
 import SNav from "../mobile/skillNav";
+import { div } from "framer-motion/m";
 
 const Blog = () => {
   const [visibleCount, setVisibleCount] = useState(6); // Commence avec 6 articles
@@ -17,6 +18,9 @@ const Blog = () => {
   return (
     <div>
       <SNav/>
+    
+    <div className="mt-14 sm:mt-0">
+      
       <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">
           <Boxes className="inline-block mx-auto" /> découvrez
@@ -79,6 +83,7 @@ const Blog = () => {
           </button>
         </div>
       )}
+    </div>
     </div>
   );
 };

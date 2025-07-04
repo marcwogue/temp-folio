@@ -1,11 +1,14 @@
 import { Boxes } from "lucide-react"
 import Form from "../ui/contactf"
 import MNav from "../mobile/moreNav"
+import FastContact from "../ui/fastContact"
 
 const Contact = () => {
   return (
-    <div className="container top-10 sticky mx-auto">
+    <div>
       <MNav/>
+    <div className="container mt-14 sm:mt-0 top-10 sticky mx-auto">
+      
 
 
         <div className="text-center hidden sm:block m-8">
@@ -23,6 +26,15 @@ const Contact = () => {
          <h1 className=''>envoyez moi<span className='text-accent-content'> un message</span></h1>
          </div>
       <Form/>
+      
+        <div className='border-l-6 m-4 border-secondary text-center border-solid text-xl'>
+         <h1 className=''>ou si <span className='text-accent-content'>vous voulez</span></h1>
+         </div>
+      
+
+      <FastContact/>
+
+    </div>
     </div>
   )
 }

@@ -16,8 +16,12 @@ const Conferences = () => {
   const confV = conf.slice(0,visible);
   const more = visible < conf.length 
   return (
+
     <div>
-      <MNav/>
+
+<MNav/>
+    <div className="mt-14 sm:mt-0 ">
+      
 
         <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">
@@ -85,6 +89,7 @@ const Conferences = () => {
       </button>
     </div>
     }
+    </div>
     </div>
   )
 }

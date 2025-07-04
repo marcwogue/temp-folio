@@ -4,7 +4,7 @@ import ParcNav from "../mobile/parcourNav"
 
 const experience = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="mt-14 sm:mt-0 overflow-x-hidden">
       <ParcNav/>
 
         <div className="text-center hidden sm:block m-8">

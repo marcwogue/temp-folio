@@ -3,6 +3,7 @@ import { Boxes, Calendar } from 'lucide-react'
 import CarouselComponent from '../ui/awair'
 import MNav from '../mobile/moreNav'
 import {  useState } from 'react'
+import CarouselMob from '../mobile/carousselMobile'
 
 const Update = () => {
 
@@ -14,8 +15,10 @@ const Update = () => {
   const actuV = actu.slice(0,visible);
   const more = visible < actu.length 
   return (
-    <div>
-      <MNav/>
+   <div>
+     <MNav/>
+    <div className='mt-14 sm:mt-0 '>
+      
         <div className="text-center hidden sm:block m-8">
         <h4 className="text-[1.5rem]">
           <Boxes className="inline-block mx-auto" /> voici
@@ -27,7 +30,8 @@ const Update = () => {
       <div className="flex  mb-8 textcenter text-3xl underline sm:hidden">
           <h1 className="mx-auto">Mises à jours</h1>
       </div>
-      <CarouselComponent/>
+      <CarouselComponent className=' hidden sm:block' />
+      <CarouselMob className='block sm:hidden' />
       <h1 className="text-3xl border-l-8 border-secondary mt-16 mb-8 pl-8 capitalize"> fil d'actualite</h1>
 
 
@@ -83,6 +87,7 @@ const Update = () => {
 
 
     </div>
+   </div>
   )
 }
 

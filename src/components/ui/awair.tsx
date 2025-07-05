@@ -72,7 +72,9 @@ const CarouselComponent: React.FC<{ className?: string }> = (props) => {
             transform: `translateX(${translateXValue}%)`,
             width: `${(stats.length / itemsPerPage) * 100}%`,
           }}
-        >
+
+          
+          >
           {stats.map((stat) => {
             const IconComponent = iconMap[stat.icon];
             if (!IconComponent) return null;

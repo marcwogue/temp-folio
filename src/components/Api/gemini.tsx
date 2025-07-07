@@ -68,7 +68,8 @@ const Gemini = () => {
            
 
             const prompt = `
-                          Tu es un modèle d'intelligence artificielle conçu pour répondre uniquement sur la base des informations suivantes : ${JSON.stringify(data)}.
+                          Tu es un modèle d'intelligence artificielle conçu pour répondre uniquement sur la base des informations suivantes : ${JSON.stringify(data)} et celle que tu peux fournir à propos tu parler des
+                          de sport, la cuisine, l'art, l'actualites , le cinema, les mangas, .... ne parle pas de choses qui ne sont pas dans les données et celle que tu peux fournir à propos de ces sujets.
 
                           Voici les instructions impératives que tu dois suivre :
 

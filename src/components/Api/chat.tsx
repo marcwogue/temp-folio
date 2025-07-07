@@ -14,7 +14,7 @@ const Chat = () => {
                 <Bot className='rounded-full mx-auto  ' />
             </div>
             :
-            <div  className='' >
+            <div  className='rounded' >
                 <Gemini />
             </div>
         }

@@ -3,7 +3,6 @@ import { Boxes, Globe, Heart, StickyNote } from "lucide-react";
 import blog from "../Json/blog.json";
 import Popup from "../ui/popup";
 import SNav from "../mobile/skillNav";
-import { div } from "framer-motion/m";
 
 const Blog = () => {
   const [visibleCount, setVisibleCount] = useState(6); // Commence avec 6 articles

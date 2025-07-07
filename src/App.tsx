@@ -20,6 +20,7 @@ import ContainerAnimatedPage from './components/ui/conteneurdiV';
 import Loader from './components/ui/loader';
 import Update from './components/pages/update';
 import FullscreenStickySection from './components/ui/screener';
+import Chat from './components/Api/chat';
 
 function App() {
   const location = useLocation();
@@ -69,7 +70,7 @@ function App() {
 
         <ContainerAnimatedPage>
 
-            <div className="m-8">
+            <div className="my-8">
               <AnimatePresence mode="wait">
                 <Routes location={location} key={location.pathname}>
                   <Route path="/" element={<FullscreenStickySection><SpeecialAnimatedPage><Acceuil /></SpeecialAnimatedPage></FullscreenStickySection>} />
@@ -87,6 +88,7 @@ function App() {
             </div>
         </ContainerAnimatedPage>
       </div>
+      <Chat/>
 
       <FooterNav />
     </div>

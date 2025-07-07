@@ -1,7 +1,6 @@
 import { ArrowRight, Boxes, Building } from "lucide-react"
 import {education} from "../Json/content.json"
 import ParcNav from "../mobile/parcourNav"
-import { div } from "framer-motion/client"
 
 
 
@@ -37,9 +36,9 @@ const Education = () => {
                             <img src={index.holder} className="h-[0rem] w-[0rem] object-cover md:h-[5rem] md:w-[6rem]  rounded-[50%]" alt="" />
                         </div>
                         <div className="timeline-end timeline-box text-[1rem]">
-                            <div className="flex justify-between">
+                            <div className="flex flex-col sm:flex-row  justify-between">
                                 <h1 className="text-2xl">{index.title}</h1>
-                                <span className="p-2 rounded-2xl bg-base-200">{index.start} <ArrowRight className="inline-block mx-auto"/> {index.end}</span>
+                                <span className="p-2 rounded-2xl text-center bg-base-200">{index.start} <ArrowRight className="inline-block mx-auto"/> {index.end}</span>
                             </div>
                             <div className="text-accent-content m-2">
                                 <Building className="inline-block mx-auto"/>{index.location}

@@ -23,8 +23,9 @@ const Navbar = (props: { left: boolean }) => {
 
   return (
     <div
-      className={`flex flex-col mt-4 justify-between m-2 text-secondary-content text-[1rem] overflow-scroll ${
-        !props.left ? "text-center h-[60vh]" : "text-left h-[50vh]"
+      className={`flex flex-col mt-4 sm:text-center sm:h-[60vh]  justify-between m-2 text-secondary-content text-[1rem] overflow-scroll 
+        ${
+        !props.left ? "text-center lg:h-[55vh] h-[70vh]" : "text-left lg:h-[50vh] "
       }`}
     >
       {navItems.map(({ to, label, icon: Icon }, index) => (
@@ -39,7 +40,7 @@ const Navbar = (props: { left: boolean }) => {
           }
         >
           <Icon className={props.left ? "text-secondary-content" : "text-secondary-content mx-auto"} />
-          {props.left && <span>{label}</span>}
+          {props.left && <span  className="hidden lg:block">{label}</span>}
         </NavLink>
       ))}
     </div>

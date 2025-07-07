@@ -25,6 +25,8 @@ const FooterNav: React.FC = () => {
           <span className="text-xs mt-1">{label}</span>
         </NavLink>
       ))}
+
+      
     </nav>
   );
 };

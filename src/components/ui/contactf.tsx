@@ -52,7 +52,7 @@ const Form = () => {
   }
 
   return (
-    <form className="w-full max-w-3xl mx-auto">
+    <form className="w-full max-w-3xl flex flex-col mx-auto">
       <div className="grid h-[30vh] grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <div className="flex flex-col justify-between">
           <label className="input h-12 w-full">
@@ -94,7 +94,7 @@ const Form = () => {
         </div>
 
         <textarea
-          placeholder="message*"
+          placeholder="message"
           className="textarea w-full"
           value={mess}
           onChange={(e) => setmess(e.target.value)}
@@ -105,7 +105,7 @@ const Form = () => {
       <div className="m-4 justify-around flex text-neutral">
         <button
           onClick={handlesubmit}
-          className="input bg-success-content hover:cursor-pointer"
+          className="input mt-6 bg-success-content hover:cursor-pointer"
         >
           <h1 className="mx-auto">
             {loading ? "Envoi en cours..." : "Envoyer"}
